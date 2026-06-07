@@ -1,0 +1,43 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  background-color: #dddddd;
+  padding: 5px 30px;
+  margin: 0px 0px;
+}
+
+.nav-head {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.body-main {
+  padding: 0px 60px;
+}
+
+.buttons button {
+  margin: 5px 5px;
+  color: white;
+  border-radius: 2px;
+}
+
+.texts {
+  padding: 0px 5px;
+}
+
+.simple {
+  background-color: blue;
+}
+.danger {
+  background-color: red;
+}
+
+.body-main textarea {
+  width: 100%;
+}

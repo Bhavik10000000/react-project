@@ -4,6 +4,7 @@ import ContextProvider from "./context/ContextProvider";
 import { MainContext } from "./context/MainContext";
 import { useContext } from "react";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 
 const MainPage = () => {
   const { theme } = useContext(MainContext);
@@ -20,11 +21,13 @@ const MainPage = () => {
 
 const App = () => {
   return (
-    <div>
-      <ContextProvider>
-        <MainPage />
-      </ContextProvider>
-    </div>
+    <BrowserRouter>
+      <div>
+        <ContextProvider>
+          <MainPage />
+        </ContextProvider>
+      </div>
+    </BrowserRouter>
   );
 };
 
